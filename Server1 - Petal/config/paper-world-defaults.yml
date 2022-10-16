@@ -276,6 +276,7 @@ tick-rates:
   behavior:
     villager:
       validatenearbypoi: -1
+      acquirepoi: -1
   container-update: 1
   grass-spread: 1
   mob-spawner: 1
