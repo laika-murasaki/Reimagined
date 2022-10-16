@@ -1,0 +1,106 @@
+enabled:
+  # Will show ownership of items when they are created/found.
+  created-by:
+    pickaxe: true
+    sword: true
+    shovel: true
+    axe: true
+    hoe: true
+    shears: true
+    bow: true
+    armor: true
+  # Will show time the item is created
+  created-date:
+    pickaxe: true
+    sword: true
+    shovel: true
+    axe: true
+    hoe: true
+    shears: true
+    bow: true
+    armor: true
+  # Will show "Fished by <player>"
+  fished-tag:
+    pickaxe: true
+    sword: true
+    shovel: true
+    axe: true
+    hoe: true
+    shears: true
+    bow: true
+    armor: true
+  # Will show "Found by <player>"
+  looted-tag:
+    pickaxe: true
+    sword: true
+    shovel: true
+    axe: true
+    hoe: true
+    shears: true
+    bow: true
+    armor: true
+  # Will show "Trade by <player>"
+  traded-tag:
+    pickaxe: true
+    sword: true
+    shovel: true
+    axe: true
+    hoe: true
+    shears: true
+    bow: true
+    armor: true
+  player-kills:
+    sword: true
+    axe: true
+    trident: true
+    bow: true
+  mob-kills:
+    sword: true
+    axe: true
+    trident: true
+    bow: true
+  blocks-mined:
+    pickaxe: true
+    shovel: true
+    axe: true
+    hoe: true
+    shears: true
+  fish-caught: true
+  sheep-sheared: true
+  armor-damage: true
+  dropped-by: true
+  elytra-tag: true
+
+messages:
+  created:
+    created-by: "&7Crafted by: &8{player}"
+    created-on: "&7Crafted on: &8{date}"
+  fished:
+    caught-by: "&7Caught by: &8{player}"
+    caught-on: "&7Caught on: &8{date}"
+    fish-caught: "&7Fish caught: &8{fish}"
+  looted:
+    found-by: "&7Found by: &8{player}"
+    found-on: "&7Found on: &8{date}"
+  traded:
+    traded-by: "&7Traded by: &8{player}"
+    traded-on: "&7Traded on: &8{date}"
+  kills:
+    mob: "&7Mob kills: &8{kills}"
+    player: "&7Player kills: &8{kills}"
+  blocks-mined: "&7Blocks mined: &8{blocks}"
+  sheep-sheared: "&7Sheep sheared: &8{sheep}"
+  dropped-by: "&7Dropped by: &8{name}" # name will be player/mob name
+  damage-taken: "&7Damage taken: &8{damage}"
+  # Display this message if the player shift click trades/crafts items. It's not really easy to get every single item
+  # that is crafted. The tag will only be added to the first item. If you don't want this message, simply replace them both with ""
+  shift-click-warning:
+    crafting: "&cCrafting items via shift clicking does not fully apply tags to each item. This is a limitation with the Bukkit API."
+    trading: "&cTrading items via shift clicking does not fully apply tags to each item. This is a limitation with the Bukkit API."
+
+# Change the default formatting for dates.
+# See: https://www.digitalocean.com/community/tutorials/java-simpledateformat-java-date-format
+# Example: "dd/mm/yyyy"
+date-format: "M/dd/yyyy"
+
+config-version: 3
