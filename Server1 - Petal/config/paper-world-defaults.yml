@@ -136,9 +136,35 @@ entities:
   spawning:
     all-chunks-are-slime-chunks: false
     alt-item-despawn-rate:
-      enabled: false
+      Good starting values:
+      enabled: true
       items:
-        cobblestone: 300
+        cobblestone: 3000
+        netherrack: 300
+        sand: 300
+        red_sand: 300
+        gravel: 300
+        dirt: 300
+        grass: 300
+        pumpkin: 300
+        melon_slice: 300
+        kelp: 300
+        bamboo: 300
+        sugar_cane: 300
+        twisting_vines: 300
+        weeping_vines: 300
+        oak_leaves: 300
+        spruce_leaves: 300
+        birch_leaves: 300
+        jungle_leaves: 300
+        acacia_leaves: 300
+        dark_oak_leaves: 300
+        mangrove_leaves: 300
+        cactus: 300
+        diorite: 300
+        granite: 300
+        andesite: 300
+        scaffolding: 600
     count-all-mobs-for-spawning: false
     creative-arrow-despawn-rate: default
     despawn-ranges:
