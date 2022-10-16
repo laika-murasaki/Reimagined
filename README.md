@@ -8,6 +8,10 @@ Minecraft Servers focus play with community and enhance vanilla keep classic fee
 
 
 
+Detail about server will out soon
+
+
+
 
 Power by Code Pex Studio
 ![Alt Text](https://media.discordapp.net/attachments/1025235383795068948/1031132435372589077/Untitled-1.png)
