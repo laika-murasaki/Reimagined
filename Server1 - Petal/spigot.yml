@@ -103,7 +103,7 @@ world-settings:
       other: 64
     ticks-per:
       hopper-transfer: 8
-      hopper-check: 1
+      hopper-check: 8
     hopper-amount: 1
     hopper-can-load-chunks: false
     entity-activation-range:
