@@ -1,0 +1,24 @@
+PREFIX: '&6&lStats2Discord &r&7> &r'
+NO_PERMISSION: '&cYou are lacking the permission: {permission}.'
+NO_CONSOLE: '&cUnable to execute this command in the console.'
+USAGE: '&cUsage: {usage}'
+UNKNOWN_PLAYER: Unknown player.
+UNKNOWN_ERROR: '&cUnknown error.'
+ACTION_COMPLETED: Action finished.
+GET_HELP: '&cUse /{id} help to get a list of commands.'
+HELP_0: '&6->-- /{id} help --<-'
+HELP_COMMAND: '&7/{id} {usage} ; &6{description}'
+UNKNOWN_COMMAND: '&cUnknown command. Use /{id} help to get a list of commands.'
+BOT_ENABLED: The Discord Bot Engine was successfully enabled.
+BOT_DISABLED: The Discord Bot Engine was disabled.
+COMMAND_BOT_STATS: Stats command
+MOJANG_ERROR: It seems like the Mojang servers are offline. Try again later.
+PLAYER_SCORE: '{player}''s score for {objective} is: {score}.'
+UNKNOWN_OBJECTIVE: Unknown objective.
+SERVER_TOTALS: 'Server totals:'
+PLAYER_TOTALS: '{player}''s stats:'
+WRONG_USAGE: Either the player does not exist or the objective does not exist. Try
+  again.
+VALUE_TOP: 'Top 10 for {objective}:'
+VALUE_TOP_N: '{number}. {player} ({score})'
+LOADING_TOP: We are loading the top list. Please wait.

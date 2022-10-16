@@ -1,0 +1,9 @@
+debug: false
+bot:
+  activity: play.laika.ml
+  guild: 1016674953103409242
+  channels:
+    logs: 1030980002428227616
+stats:
+- '`m.sandstone: {m.sandstone}'
+- 'm.stone: {m.stone}`'
