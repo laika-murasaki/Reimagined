@@ -1,0 +1,14 @@
+server:
+  name: "Velocity"
+metrics:
+  enabled: true
+  driver: "prometheus"
+  collectors:
+    systemGc: true
+    systemMemory: true
+    systemProcess: true
+    systemThread: true
+    server: true
+    world: false
+    tick: true
+    events: true
