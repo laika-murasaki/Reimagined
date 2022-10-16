@@ -78,8 +78,8 @@ DiscordToMinecraftMessageReplyFormat: " (ตอบ %name%)"
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
+MinecraftChatToDiscordMessageFormat: "<%displayname%> %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "<%displayname%> %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
@@ -194,14 +194,14 @@ DiscordChatChannelListCommandAllPlayersSeparator: ", "
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerJoinMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
   Content: ""
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#00ff00"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -223,14 +223,14 @@ MinecraftPlayerJoinMessage:
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerFirstJoinMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
   Content: ""
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -252,14 +252,14 @@ MinecraftPlayerFirstJoinMessage:
 # %message%:        leave message as seen in-game
 #
 MinecraftPlayerLeaveMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
   Content: ""
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#ff0000"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -284,7 +284,7 @@ MinecraftPlayerLeaveMessage:
 MinecraftPlayerDeathMessage:
   Enabled: true
   Webhook:
-    Enable: false
+    Enable: true
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
   Content: ""
@@ -305,21 +305,21 @@ MinecraftPlayerDeathMessage:
     Footer:
       Text: ""
       IconUrl: ""
-    Timestamp: false
+    Timestamp: true
 #
 # Available placeholders for PlayerAchievement messages:
 # %achievement%: title of the achievement/advancement
 # %world%:       the name of the world the user is in
 #
 MinecraftPlayerAchievementMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
   Content: ""
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -373,13 +373,13 @@ ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Server is offline
 # This is the message sent to players when they run "/discord". It's recommended to leave command syntax as a part of this
 # Use {INVITE} as a placeholder for the invite link people need to join the Discord server, uses DiscordInviteLink configured in config.yml
 #
-DiscordCommandFormat: "&bJoin us on Discord at {INVITE}&b. For command help, do \"/discord ?\""
+DiscordCommandFormat: "&bเข้าร่วม Discord กับเราที่ {INVITE}&b สำหรับความช่วยเหลือคำสั่ง  \"/discord ?\""
 
 # No permission message
-NoPermissionMessage: "&cYou do not have permission to perform this command."
+NoPermissionMessage: "&cคุณไม่ได้รับอนุญาตให้ดำเนินการคำสั่งนี้"
 
 # Unknown command message
-UnknownCommandMessage: "&bThat command doesn't exist!"
+UnknownCommandMessage: "&bคำสั่งนั้นไม่มีอยู่จริง!"
 
 # Server startup/shutdown messages
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
@@ -426,19 +426,19 @@ ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked
 # MinecraftNobodyFound:         %target%:       the input that led to no results being found
 #
 # Discord
-CodeGenerated: "Your link code is %code%. PM the bot on Discord (%botname%) containing just this code as the message to link your accounts."
-UnknownCode: "I don't know of such a code, try again."
-InvalidCode: "Are you sure that's your code? Link codes are 4 numbers long."
-DiscordAccountLinked: "Your Discord account has been linked to %name% (%uuid%)"
-DiscordAccountAlreadyLinked: "You are already linked to %username% (%uuid%)"
+CodeGenerated: "รหัสลิงค์ของคุณคือ %code% PM บอทบน Discord (%botname%) ที่มีเพียงรหัสนี้เป็นข้อความสำหรับเชื่อมโยงบัญชีของคุณ"
+UnknownCode: "ฉันไม่รู้รหัสดังกล่าว ลองอีกครั้ง"
+InvalidCode: "คุณแน่ใจหรือว่านั่นคือรหัสของคุณ รหัสลิงค์มีความยาว 4 ตัว"
+DiscordAccountLinked: "บัญชี Discord ของคุณเชื่อมโยงกับ %name% (%uuid%)"
+DiscordAccountAlreadyLinked: "คุณเชื่อมโยงกับ %username% (%uuid%) แล้ว"
 DiscordLinkedAccountRequired: "You attempted to say the following message to the game chat but this server requires that you have your Minecraft account linked to your Discord account. Link it in-game by typing `/discord link`. \n```%message%```"
-DiscordLinkedAccountCheckFailed: "Unable to check if your account is linked, please try again later"
+DiscordLinkedAccountCheckFailed: "ไม่สามารถตรวจสอบว่าบัญชีของคุณเชื่อมโยงอยู่หรือไม่ โปรดลองอีกครั้งในภายหลัง"
 # Minecraft
-ClickToCopyCode: "Click to copy"
-MinecraftAccountLinked: "&bYour UUID has been linked to Discord user %username% (%id%)"
-MinecraftAccountAlreadyLinked: "&bYour Minecraft account is already associated with a Discord account. Should you have permission to, you can unlink your account with /discord unlink."
-LinkedCommandSuccess: "&bYour Minecraft account is associated with %name%."
-UnlinkCommandSuccess: "&bYour Minecraft account is no longer associated with %name%."
-MinecraftNoLinkedAccount: "&cYour Minecraft account isn't associated with a Discord account."
-LinkingError: "&cCurrently unable to link accounts due to an internal error. Contact your server administration team."
-MinecraftNobodyFound: "&cNobody found with Discord ID/Discord name/Minecraft name/Minecraft UUID matching \"%target%\" to look up."
+ClickToCopyCode: "คลิกเพื่อคัดลอก"
+MinecraftAccountLinked: "&bUUID ของคุณเชื่อมโยงกับผู้ใช้ Discord แล้ว %username% (%id%)"
+MinecraftAccountAlreadyLinked: "&bบัญชี Minecraft ของคุณเชื่อมโยงกับบัญชี Discord แล้ว หากคุณได้รับอนุญาต คุณสามารถยกเลิกการเชื่อมโยงบัญชีของคุณกับ /discord unlink"
+LinkedCommandSuccess: "&bบัญชี Minecraft ของคุณเชื่อมโยงกับ %name%"
+UnlinkCommandSuccess: "&bบัญชี Minecraft ของคุณไม่เชื่อมโยงกับ %name%"
+MinecraftNoLinkedAccount: "&cบัญชี Minecraft ของคุณไม่ได้เชื่อมโยงกับบัญชี Discord"
+LinkingError: "&cขณะนี้ไม่สามารถเชื่อมโยงบัญชีได้เนื่องจากข้อผิดพลาดภายใน ติดต่อทีมดูแลเซิร์ฟเวอร์ของคุณ"
+MinecraftNobodyFound: "&cไม่พบ Discord ID/ชื่อ Discord/ชื่อ Minecraft/Minecraft UUID ที่ตรงกัน \"%target%\" เพื่อค้นหา"
