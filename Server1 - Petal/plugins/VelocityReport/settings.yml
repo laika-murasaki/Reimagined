@@ -1,0 +1,74 @@
+default_language: en_US
+velocity_support: true
+bstats: true
+sounds:
+  command: ENTITY_EXPERIENCE_ORB_PICKUP
+  book: ITEM_BOOK_PAGE_TURN
+  new_report: ENTITY_EXPERIENCE_ORB_PICKUP
+report:
+  cooldown: 60
+  send_new_report_message: true
+  staff_actionbar:
+    enabled: true
+    send_zero: false
+  prevent_self: true
+  custom_reason: false
+  auto_done:
+    enabled: true
+    time: 3600
+    call_update_event: false
+  commands:
+    accept:
+      enabled: false
+      commands:
+      - give $moderator diamond 1
+    done:
+      enabled: false
+      commands:
+      - give %player% diamond 1
+  reasons:
+    killaura:
+      enabled: true
+      displayname: <blue>Killaura
+      description: Killaura is a cheat that allows you to attack players without looking
+        at them.
+    reach:
+      enabled: true
+      displayname: <blue>Reach
+      description: Reach is a cheat that allows you to attack players from a long
+        distance.
+    speed:
+      enabled: true
+      displayname: <blue>Speed
+      description: Speed is a cheat that allows you to move faster than normal.
+    scaffold:
+      enabled: true
+      displayname: <blue>Scaffold
+      description: Scaffold is a cheat that allows you to place blocks under you.
+    fly:
+      enabled: true
+      displayname: <blue>Fly
+      description: Fly is a cheat that allows you to fly in the air.
+    aimbot:
+      enabled: true
+      displayname: <blue>Aimbot
+      description: Aimbot is a cheat that allows you to aim at players automatically.
+    esp:
+      enabled: true
+      displayname: <blue>ESP
+      description: ESP is a cheat that allows you to see players through walls.
+discord:
+  enabled: false
+  webhook_url: ''
+  embed:
+    color: '#ff0000'
+    author: Report System
+    author_icon_url: https://i.imgur.com/8ZQ9Z0I.png
+    author_url: https://i.imgur.com/8ZQ9Z0I.png
+    title: New Report
+    title_url: https://i.imgur.com/8ZQ9Z0I.png
+    description: '**$reporter** reported **$reported** for **$reason** *($server)*'
+    image_url: http://cravatar.eu/avatar/%name%/64.png
+    thumbnail_url: http://cravatar.eu/avatar/%name%/64.png
+    footer: Report System
+    footer_icon_url: https://i.imgur.com/8ZQ9Z0I.png
