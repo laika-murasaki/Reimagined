@@ -6,8 +6,6 @@ ConfigVersion: 1.26.0
 
 # Bot token; don't know what this is? Look at the video on the plugin page for instructions
 # You must restart your server after changing this option
-BotToken: "------------------------------14"
-
 # Channel links from game to Discord
 # syntax is Channels: {"in-game channel name from Minecraft": "numerical channel ID from Discord", "another in-game channel name from Minecraft": "another numerical channel ID from Discord"}
 #
@@ -259,7 +257,7 @@ DiscordChatChannelDiscordFilters: {".*Online players\\(.*": "", ".*\\*\\*No onli
 # ChannelTopicUpdaterChannelTopicsAtShutdownEnabled: whether the channel topics should be changed at server shutdown at all
 # ChannelTopicUpdaterRateInMinutes: amount of minutes between automatically updating the channel topics with fresh information
 #
-ChannelTopicUpdaterChannelTopicsAtShutdownEnabled: true
+ChannelTopicUpdaterChannelTopicsAtShutdownEnabled: false
 ChannelTopicUpdaterRateInMinutes: 10
 
 # Channel Updater
