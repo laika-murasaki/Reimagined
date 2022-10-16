@@ -64,8 +64,8 @@ world-settings:
     arrow-despawn-rate: 1200
     trident-despawn-rate: 1200
     merge-radius:
-      item: 2.5
-      exp: 3.0
+      item: -1
+      exp: -1
     item-despawn-rate: 6000
     thunder-chance: 100000
     view-distance: default
