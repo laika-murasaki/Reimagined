@@ -1,76 +1,74 @@
-#################################################
+# ################################################
 # DriveBackupV2   -   by Max Maeder (MaxTheGinus)
-#################################################
+# ################################################
 
 # DOCUMENTATION HAS MOVED
 # Now available online at: https://github.com/MaxMaeder/DriveBackupV2/wiki
 
 version: 2
 
-delay: 60
-backup-thread-priority: 1
+delay: -1
+backup-thread-priority: 6
 keep-count: 20
 local-keep-count: 0
-zip-compression: 1
+zip-compression: 6
 backups-require-players: true
 disable-saving-during-backups: true
 
-scheduled-backups: false
+scheduled-backups: true
 backup-schedule-list:
+- days: 
+  - "everyday"
+  time: "02:30"
 
 backup-list:
-- glob: "world*"
-  format: "Backup-world-%FORMAT.zip"
+- glob: world*
+  format: Backup-world-%FORMAT.zip
   create: true
-- path: "plugins"
-  format: "Backup-plugins-%FORMAT.zip"
+- path: plugins
+  format: Backup-plugins-%FORMAT.zip
   create: true
 
-external-backup-list:
-
-local-save-directory: "backups"
-remote-save-directory: "backups"
+local-save-directory: backups
+remote-save-directory: backups
 
 googledrive:
-  enabled: false
-  shared-drive-id: ""
+  enabled: true
+  shared-drive-id: '1AUy3xYzPKJvM9HwZ0hbt6Gt4zt0Kq7Ke'
 onedrive:
   enabled: false
 dropbox:
   enabled: false
 webdav:
   enabled: false
-  hostname: "http://example.com/directory"
-  username: "Username"
-  password: "Password"
+  hostname: http://example.com/directory
+  username: Username
+  password: Password
 nextcloud:
   enabled: false
-  hostname: "https://example.com/remote.php/dav/files/user/"
-  username: "Username"
-  password: "Password"
-  chunk-size: 20_000_000
+  hostname: https://example.com/remote.php/dav/files/user/
+  username: Username
+  password: Password
+  chunk-size: 20000000
 ftp:
   enabled: false
-  hostname: "ftp.example.com"
+  hostname: ftp.example.com
   port: 21
   sftp: false
   ftps: false
-  username: "Username"
-  password: "Password"
-  sftp-public-key: 
-  sftp-passphrase: 
-  working-dir:
+  username: Username
+  password: Password
 
 messages:
   send-in-chat: true
-  prefix: "&6[&4DriveBackupV2&6] "
-  default-color: "&3"
+  prefix: '&6[&4DriveBackupV2&6] '
+  default-color: '&3'
 
 advanced:
   metrics: true
   update-check: true
   suppress-errors: false
   debug: false
-  date-language: "en"
-  date-timezone: "-00:00"
-  ftp-file-separator: "/"
+  date-language: en
+  date-timezone: -00:00
+  ftp-file-separator: /
