@@ -8,9 +8,11 @@ Minecraft Servers focus play with community and enhance vanilla keep classic fee
 
 
 
-Detail about server will out soon
 
 
+
+Detail about server will out later
+![Discord Banner 2](https://discordapp.com/api/guilds/1016674953103409242/widget.png?style=banner2)
 
 
 Power by Code Pex Studio
