@@ -114,7 +114,7 @@ settings:
   food-properties: {}
   tps-catchup: true
   server-mod-name: Purpur
-  use-alternate-keepalive: false
+  use-alternate-keepalive: true
   allow-water-placement-in-the-end: true
   enchantment:
     allow-infinity-and-mending-together: false

@@ -15,7 +15,7 @@ enable-async-mob-spawning: true
 # Optimizes projectile settings
 projectile:
   max-loads-per-tick: 10
-  max-loads-per-projectile: 10
+  max-loads-per-projectile: 8
 sentry-dsn: ''
 enable-books: true
 # Configures Flare, the built-in profiler
